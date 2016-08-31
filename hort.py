@@ -3,11 +3,17 @@
 
 import random
 
-flip = random.randint(0,1)
+numFlips = int(input("How many times do you want to flip? "))
 
-if flip == 0:
-	flipWord = "heads"
-else:
-	flipWord = "tails"
+count = 0
 
-print("The flip: ", flipWord)
+while count < numFlips:
+	flip = random.randint(0,1)
+	if flip == 0:
+		flipWord = "heads"
+	else:
+		flipWord = "tails"
+
+	count += 1
+
+	print("The flip: ", flipWord)
